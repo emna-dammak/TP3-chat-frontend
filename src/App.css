@@ -1,0 +1,113 @@
+/* General Application Styling */
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif; /* Improved typography */
+  color: #333; /* Darker text for better readability */
+  background: #f4f4f4; /* Lighter background for contrast */
+  padding: 20px;
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for depth */
+}
+
+/* Link Styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it bold for emphasis */
+}
+
+/* Additional Styles for List and Forms */
+ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px; /* Add space between list items */
+  background: white; /* Background for each list item */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for modern look */
+  box-shadow: 0 2px 4px rgba(148, 72, 100, 0.05); /* Subtle shadows for depth */
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+input {
+  width: 300px; /* Ensuring sufficient input width */
+  border: 1px solid #ccc; /* Subtle border for inputs */
+}
+
+button {
+  background-color: #16bc90; /* Green background for buttons */
+  color: white;
+  cursor: pointer; /* Cursor pointer to indicate it's clickable */
+}
+.emoji-button {
+  background-color: #ffffff;
+  cursor: pointer; /* Cursor pointer to indicate it's clickable */
+}
+.message-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container {
+  width: 100%;
+}
+button:hover {
+  background-color: #78b8a7; /* Slightly darker on hover for feedback */
+}
+
+form {
+  margin-top: 20px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: 5vmin; /* Smaller text on smaller screens */
+  }
+
+  input {
+    width: 90%; /* More responsive width for smaller screens */
+  }
+}
